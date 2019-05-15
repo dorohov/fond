@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, 'Roboto', sans-serif;
+    &.is--menu-open {
+        .mobile__menu {
+            transform: none;
+        }
+    }
+    &.is--overlay {
+        #overlay {
+            display: block;
+        }
+    }
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+svg,
+img {
+    vertical-align: middle;
+}
+
+img {
+    max-width: 100%;
+    width: 100%;
+}
+
+#overlay {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(#000, .5);
+    z-index: 999;
+    display: none;
+    cursor: pointer;
+}

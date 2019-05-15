@@ -1,0 +1,27 @@
+.btn {
+    display: inline-block;
+    outline: none;
+    border: none;
+    text-transform: uppercase;
+    font-family: 'Oswald';
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: .28em;
+    color: #fff;
+    padding: 25px 60px;
+    background: $red;
+    transition: .4s all ease;
+    &:hover {
+        background: #000;
+        color: #fff;
+    }
+}
+
+@media (max-width: $resp768) {
+    .btn {
+        font-size: 14px;
+        padding: 15px 30px;
+        letter-spacing: .20em;
+    }
+}

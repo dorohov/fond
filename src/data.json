@@ -1,0 +1,62 @@
+{
+    "sitename": "Фонд РПОО",
+    "phone": "+7 (4862) 54-46-29",
+    "phone_link": "tel:84862544629",
+    "email": "frpoo@yandex.ru",
+    "pages": {
+        "index": "index.html",
+        "about": "about.html",
+        "programs": "programs.html",
+        "program": "program.html",
+        "projects": "projects.html",
+        "support": "support.html",
+        "partners": "partners.html",
+        "news": "news.html",
+        "article": "article.html",
+        "gisp": "gisp.html",
+        "contacts": "contacts.html",
+        "error404": "404.html"
+    },
+    "menu": [
+        {
+            "title": "О Фонде",
+            "page": "@@pages.about",
+            "class": ""
+        },
+        {
+            "title": "Программы",
+            "page": "@@pages.programs",
+            "class": "is--active"
+        },
+        {
+            "title": "Проекты",
+            "page": "@@pages.projects",
+            "class": ""
+        },
+        {
+            "title": "Партнеры",
+            "page": "@@pages.partners",
+            "class": ""
+        },
+        {
+            "title": "Господдержка",
+            "page": "@@pages.support",
+            "class": ""
+        },
+        {
+            "title": "ГИСП",
+            "page": "@@pages.gisp",
+            "class": ""
+        },
+        {
+            "title": "Новости",
+            "page": "@@pages.news",
+            "class": ""
+        },
+        {
+            "title": "Контакты",
+            "page": "@@pages.contacts",
+            "class": ""
+        }
+    ]
+}
