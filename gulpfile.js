@@ -11,7 +11,6 @@ var gulp = require('gulp'),
     browserSync = require('browser-sync').create(), // Автообновление браузера
     plumber = require('gulp-plumber'),              // 
     concat = require('gulp-concat'),
-    twig = require('gulp-twig'),
     uglify = require('gulp-uglify'),                
     rename = require('gulp-rename'),
     notify = require("gulp-notify"),
@@ -114,16 +113,6 @@ function html() {
                 .on('end', browserSync.reload)
 }
 
-// function twig() {
-//     return gulp.src('src/twig/*.twig')
-//             .pipe(plumber({errorHandler: notify.onError("Error: <%= error.message %>")}))
-//             .pipe(twig({
-//                 data: data
-//             }))
-//             .pipe(gulp.dest('./'))
-//             .on('end', browserSync.reload)
-// }
-
 function js() {
     return gulp.src(assets.js)
                 .pipe(sourcemaps.init())
@@ -156,16 +145,7 @@ function createBundleCss() {
 
 function createBundleJs() {
     return gulp.src([
-                './dist/js/jquery.visible.min.js',
-                './dist/js/prefixfree.dynamic-dom.min.js',
-                './dist/js/anime.min.js',
-                './dist/js/jquery.fancybox.min.js',
-                './dist/js/svg4everybody.min.js',
-                './dist/js/slick.min.js',
-                './dist/js/validator.min.js',
-                './dist/js/vivus.min.js',
-                './dist/js/jquery.modal.min.js',
-                './dist/js/main.js'
+                './'
             ])
             .pipe(sourcemaps.init())
             .pipe(concat('bundle.js'))
@@ -178,14 +158,12 @@ gulp.task('css', css)
 gulp.task('svgMap', svgMap)
 gulp.task('imageMinify', imageMinify)
 gulp.task('html', html)
-gulp.task('twig', twig)
 gulp.task('js', js)
 gulp.task('createBundleJs', createBundleJs)
 gulp.task('createBundleCss', createBundleCss)
 gulp.task('browser_sync', browser_sync)
 
 gulp.task('build', function() {
-    // gulp.watch('src/twig/**/*.twig', gulp.series('twig'))
     gulp.watch('src/html/**/*.html', gulp.series('html'))
     gulp.watch('src/scss/**/*.scss', gulp.series('css'))
     gulp.watch(assets.js, gulp.series('js'))
@@ -196,7 +174,7 @@ gulp.task('build', function() {
 })
 
 gulp.task('default', gulp.series(
-    gulp.parallel('html', 'css', 'js', 'svgMap', 'imageMinify'),
-    // gulp.parallel('twig', 'css', 'js', 'createBundleJs', 'svgMap', 'imageMinify'),
+    // gulp.parallel('html', 'css', 'js', 'svgMap', 'imageMinify'),
+    gulp.parallel('html', 'css', 'js', 'createBundleJs', 'svgMap', 'imageMinify'),
     gulp.parallel('build', 'browser_sync')
 ))

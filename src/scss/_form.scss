@@ -1,0 +1,166 @@
+.form {
+    background: rgba(177, 177, 177, 0.1);
+    &__row {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -15px 30px -15px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &__block {
+        padding-left: 15px;
+        padding-right: 15px;
+        &.is-w3 {
+            max-width: 33.3333333%;
+        }
+        &.is--w1 {
+            max-width: 100%;
+        }
+        width: 100%;
+    }
+    &__group {
+        position: relative;
+        display: flex;
+        flex-flow: wrap;
+        flex-wrap: nowrap;
+        border: 1px solid #000;
+        label {
+            order: 0;
+            width: 100%;
+            max-width: 70px;
+            background: rgba(#000, .1);
+            border-right: 1px solid #000;
+            display: flex;
+            justify-content: center;
+            transition: .25s all ease;
+            align-items: center;
+            svg {
+                fill: #fff;
+            }
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            display: block;
+            width: 100%;
+            max-width: 100%;
+            order: 1;
+            border: none;
+            padding: 22px 30px;
+            outline: none;
+            font-size: 16px;
+            background: transparent;
+            &::placeholder {
+                color: #858585;
+            }
+            &:focus {
+                & + label {
+                    background: #000;
+                }
+            }
+        }
+    }
+    &__submit {
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 30px;
+        max-width: 360px;
+        width: 100%;
+        margin: 0 auto;
+        input[type="submit"] {
+            width: 100%;
+        }
+        &__btn {
+            margin-bottom: 15px;
+        }
+    }
+    &__check {
+        display: flex;
+        flex-wrap: nowrap;
+        input[type="checkbox"] {
+            display: none;
+            &:checked + label {
+                span {
+                    opacity: 1;
+                    transform: none;
+                }
+            }
+        }
+        label {
+            &.is--sq {
+                display: flex;
+                min-width: 20px;
+                min-height: 20px;
+                width: 20px;
+                height: 20px;
+                border: 1px solid #000;
+                position: relative;
+                cursor: pointer;
+                align-items: center;
+                justify-content: center;
+                margin-right: 15px;
+                span {
+                    width: 12px;
+                    height: 12px;
+                    display: block;
+                    background: $red;
+                    transition: .25s all ease;
+                    transform: scale(1.5) rotate(180deg);
+                    opacity: 0;
+                }
+            }
+            &.is--text {
+                font-size: 14px;
+                line-height: 16px;
+                color: #000;
+                a {
+                    color: $red;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $resp1025) {
+    .form {
+        &__block {
+            &.is-w3 {
+                max-width: 100%;
+                margin-bottom: 30px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $resp768) {
+    .form {
+        &__row {
+            margin-bottom: 15px;
+        }
+        &__block {
+            &.is-w3 {
+                margin-bottom: 15px;
+            }
+        }
+        &__group {
+            input[type="text"],
+            input[type="email"],
+            input[type="password"] {
+                padding: 15px 20px;
+            }
+            label {
+                max-width: 50px;
+            }
+        }
+        &__submit {
+            max-width: 100%;
+        }
+    }
+}

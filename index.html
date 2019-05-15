@@ -34,6 +34,9 @@
 
                 </ul>
             </nav>
+            <div class="navbar__lk">
+                <a href="https://passport.gisp.gov.ru/adfs/ls/" target="_blank" class="btn">Войти</a>
+            </div>
             <div class="navbar__mm">
                 <button class="hamburger hamburger--collapse" type="button" id="openMenuM">
                     <span class="hamburger-box">
@@ -65,12 +68,15 @@
 
             </ul>
         </div>
+        <div class="mobile__menu__lk">
+            <a href="https://passport.gisp.gov.ru/adfs/ls/" target="_blank" class="btn">Войти</a>
+        </div>
     </div>
     <main>
         <div class="banner">
-            <div class="banner__line">
+            <div class="banner__line __anim" data-animtransition=".25s" data-animtype="fadeInUp" data-animdelay="0">
                 <div class="banner__line__inner container">
-                    <div class="banner__line__title">РАЗВИВАЯ ПРОМЫШЛЕННОСТЬ – СОЗДАЕМ БУДУЩЕЕ!</div>
+                    <h1 class="banner__line__title">РАЗВИВАЯ ПРОМЫШЛЕННОСТЬ – СОЗДАЕМ БУДУЩЕЕ!</h1>
                     <div class="banner__line__desc">Фонд развития промышленности Орловской области – это новые рабочие места <br> и прямые инвестиции в региональную экономику.</div>
                     <div class="banner__line__btn"><a href="#" class="btn">Подать заявку</a></div>
                 </div>
@@ -80,11 +86,309 @@
             <div class="in-one__inner container">
                 <div class="heading is--center">О фонде</div>
                 <div class="in-one__desc">Фонд предоставляет льготные займы промышленным предприятиям Орловской области на реализацию проектов, направленных на разработку и внедрение перспективных технологий, производство новой конкурентоспособной и высокотехнологичной продукции гражданского назначения с импортозамещающим или экспортным потенциалом.</div>
+                <div class="in-one__list">
+                    <ul>
+                        <li class="__anim" data-animtransition=".25" data-animtype="fadeInUp" data-animdelay="0">
+                            <div class="in-one__list__block">
+                                <div class="in-one__list__block__left">
+                                    <svg class="svg-about_one-dims svg is--about_one">
+                                        <use xlink:href="img/svg/sprites.svg#about_one"></use>
+                                    </svg>
+                                </div>
+                                <div class="in-one__list__block__right">
+                                    <div class="in-one__list__block__title">Сумма</div>
+                                    <div class="in-one__list__block__desc">от 20 до 100 млн. руб.</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="__anim" data-animtransition=".25" data-animtype="fadeInUp" data-animdelay="0.3">
+                            <div class="in-one__list__block">
+                                <div class="in-one__list__block__left">
+                                    <svg class="svg-about_two-dims svg is--about_two">
+                                        <use xlink:href="img/svg/sprites.svg#about_two"></use>
+                                    </svg>
+                                </div>
+                                <div class="in-one__list__block__right">
+                                    <div class="in-one__list__block__title">Ставка</div>
+                                    <div class="in-one__list__block__desc">1%, 3%, 5% годовых</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="__anim" data-animtransition=".25" data-animtype="fadeInUp" data-animdelay="0.6">
+                            <div class="in-one__list__block">
+                                <div class="in-one__list__block__left">
+                                    <svg class="svg-about_three-dims svg is--about_three">
+                                        <use xlink:href="img/svg/sprites.svg#about_three"></use>
+                                    </svg>
+                                </div>
+                                <div class="in-one__list__block__right">
+                                    <div class="in-one__list__block__title">Срок</div>
+                                    <div class="in-one__list__block__desc">5 лет</div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="in-two slide">
+            <div class="in-two__inner container">
+                <div class="heading is--center">Основные отрасли реализации проектов</div>
+                <div class="in-two__list">
+                    <div class="in-two__list__inner">
+                        <div class="in-two__list__block">
+                            <div class="in-two__list__block__inner">
+                                <div class="in-two__list__block__content">Машиностроение</div>
+                                <div class="in-two__list__block__img">
+                                    <img src="img/ot_placeholder.jpg" data-src="img/ot1.jpg" alt="Машиностроение" class="lazy">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="in-two__list__block">
+                            <div class="in-two__list__block__inner">
+                                <div class="in-two__list__block__content">Легкая промышленность</div>
+                                <div class="in-two__list__block__img">
+                                    <img src="img/ot_placeholder.jpg" data-src="img/ot2.jpg" alt="Легкая промышленность" class="lazy">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="in-two__list__block">
+                            <div class="in-two__list__block__inner">
+                                <div class="in-two__list__block__content">Фармацевтика</div>
+                                <div class="in-two__list__block__img">
+                                    <img src="img/ot_placeholder.jpg" data-src="img/ot3.jpg" alt="Фармацевтика" class="lazy">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="in-two__list__block">
+                            <div class="in-two__list__block__inner">
+                                <div class="in-two__list__block__content">Химическая промышленность</div>
+                                <div class="in-two__list__block__img">
+                                    <img src="img/ot_placeholder.jpg" data-src="img/ot4.jpg" alt="Химическая промышленность" class="lazy">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="in-two__list__block">
+                            <div class="in-two__list__block__inner">
+                                <div class="in-two__list__block__content">Производство электрооборудования</div>
+                                <div class="in-two__list__block__img">
+                                    <img src="img/ot_placeholder.jpg" data-src="img/ot5.jpg" alt="Производство электрооборудования" class="lazy">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="in-two__list__block">
+                            <div class="in-two__list__block__inner">
+                                <div class="in-two__list__block__content">Деревообработка</div>
+                                <div class="in-two__list__block__img">
+                                    <img src="img/ot_placeholder.jpg" data-src="img/ot6.jpg" alt="Деревообработка" class="lazy">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="in-two__list__block">
+                            <div class="in-two__list__block__inner">
+                                <div class="in-two__list__block__content">Электроника</div>
+                                <div class="in-two__list__block__img">
+                                    <img src="img/ot_placeholder.jpg" data-src="img/ot7.jpg" alt="Электроника" class="lazy">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="in-two__list__block">
+                            <div class="in-two__list__block__inner">
+                                <div class="in-two__list__block__content">Металлургия</div>
+                                <div class="in-two__list__block__img">
+                                    <img src="img/ot_placeholder.jpg" data-src="img/ot8.jpg" alt="Металлургия" class="lazy">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="in-two__list__block">
+                            <div class="in-two__list__block__inner">
+                                <div class="in-two__list__block__content">Производство прочих готовых изделий</div>
+                                <div class="in-two__list__block__img">
+                                    <img src="img/ot_placeholder.jpg" data-src="img/ot9.jpg" alt="Производство прочих готовых изделий" class="lazy">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="in-three slide">
+            <div class="in-three__inner container">
+                <div class="heading is--center">Критерии отбора проектов</div>
+                <div class="in-three__list">
+                    <div class="in-three__list__inner">
+                        <div class="in-three__list__block">
+                            <div class="in-three__list__block__inner">
+                                <div class="in-three__list__block__icon __anim" data-animtransition=".25" data-animtype="jackInTheBox" data-animdelay="0">
+                                    <img src="img/svg/in_three_placeholder.svg" alt="Импортозамещение" class="lazy" data-src="img/svg/in_three1.svg">
+                                </div>
+                                <div class="in-three__list__block__title">Импортозамещение</div>
+                                <div class="in-three__list__block__desc">Рыночная перспективность и потенциал импортозамещения/экспортный потенциал продукта</div>
+                            </div>
+                        </div>
+                        <div class="in-three__list__block">
+                            <div class="in-three__list__block__inner">
+                                <div class="in-three__list__block__icon __anim" data-animtransition=".25" data-animtype="jackInTheBox" data-animdelay="0">
+                                    <img src="img/svg/in_three_placeholder.svg" alt="Финансовая устойчивость" class="lazy" data-src="img/svg/in_three2.svg">
+                                </div>
+                                <div class="in-three__list__block__title">Финансовая устойчивость</div>
+                                <div class="in-three__list__block__desc">Финансовая состоятельность Заявителя, качество и достаточность обеспечения возврата займа</div>
+                            </div>
+                        </div>
+                        <div class="in-three__list__block">
+                            <div class="in-three__list__block__inner">
+                                <div class="in-three__list__block__icon __anim" data-animtransition=".25" data-animtype="jackInTheBox" data-animdelay="0">
+                                    <img src="img/svg/in_three_placeholder.svg" alt="Cоответствие технологии" class="lazy" data-src="img/svg/in_three3.svg">
+                                </div>
+                                <div class="in-three__list__block__title">Cоответствие технологии</div>
+                                <div class="in-three__list__block__desc">Научно-техническая перспективность продукта и проекта, включая соответствие принципам наилучших доступных технологий</div>
+                            </div>
+                        </div>
+                        <div class="in-three__list__block">
+                            <div class="in-three__list__block__inner">
+                                <div class="in-three__list__block__icon __anim" data-animtransition=".25" data-animtype="jackInTheBox" data-animdelay="0">
+                                    <img src="img/svg/in_three_placeholder.svg" alt="Обоснование" class="lazy" data-src="img/svg/in_three4.svg">
+                                </div>
+                                <div class="in-three__list__block__title">Обоснование</div>
+                                <div class="in-three__list__block__desc">Производственная обоснованность проекта и стратегическая заинтересованность компании в его реализации</div>
+                            </div>
+                        </div>
+                        <div class="in-three__list__block">
+                            <div class="in-three__list__block__inner">
+                                <div class="in-three__list__block__icon __anim" data-animtransition=".25" data-animtype="jackInTheBox" data-animdelay="0">
+                                    <img src="img/svg/in_three_placeholder.svg" alt="Юридическая состоятельность" class="lazy" data-src="img/svg/in_three5.svg">
+                                </div>
+                                <div class="in-three__list__block__title">Юридическая состоятельность</div>
+                                <div class="in-three__list__block__desc">Юридическая состоятельность Заявителя, лиц, предоставивших обеспечение, ключевых исполнителей и схемы реализации проекта</div>
+                            </div>
+                        </div>
+                        <div class="in-three__list__block">
+                            <div class="in-three__list__block__inner">
+                                <div class="in-three__list__block__icon __anim" data-animtransition=".25" data-animtype="jackInTheBox" data-animdelay="0">
+                                    <img src="img/svg/in_three_placeholder.svg" alt="Эффективность" class="lazy" data-src="img/svg/in_three6.svg">
+                                </div>
+                                <div class="in-three__list__block__title">Эффективность</div>
+                                <div class="in-three__list__block__desc">Финансово-экономическая эффективность и устойчивость проекта</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form slide">
+            <div class="form__inner container">
+                <div class="heading is--center">Задайте интересующий вас вопрос</div>
+                <form class="form__wrap">
+                    <div class="form__row">
+                        <div class="form__block is-w3">
+                            <div class="form__group">
+                                <input type="text" name="name" id="name" placeholder="Ваше имя">
+                                <label for="name">
+                                    <svg class="svg-form_name-dims svg is--form_name">
+                                        <use xlink:href="img/svg/sprites.svg#form_name"></use>
+                                    </svg>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form__block is-w3">
+                            <div class="form__group">
+                                <input type="text" name="phone" id="phone" placeholder="Ваш телефон">
+                                <label for="phone">
+                                    <svg class="svg-form_phone-dims svg is--form_phone">
+                                        <use xlink:href="img/svg/sprites.svg#form_phone"></use>
+                                    </svg>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form__block is-w3">
+                            <div class="form__group">
+                                <input type="email" name="email" id="email" placeholder="Ваш E-mail">
+                                <label for="email">
+                                    <svg class="svg-form_email-dims svg is--form_email">
+                                        <use xlink:href="img/svg/sprites.svg#form_email"></use>
+                                    </svg>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form__row">
+                        <div class="form__block is-w1">
+                            <div class="form__group">
+                                <input type="text" name="comm" id="comm" placeholder="Ваш вопрос">
+                                <label for="comm">
+                                    <svg class="svg-form_comm-dims svg is--form_comm">
+                                        <use xlink:href="img/svg/sprites.svg#form_comm"></use>
+                                    </svg>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form__row">
+                        <div class="form__submit">
+                            <div class="form__submit__btn">
+                                <input type="submit" value="Отправить вопрос" class="btn">
+                            </div>
+                            <div class="form__submit__text">
+                                <div class="form__check">
+                                    <input type="checkbox" name="aggr" id="aggr" checked>
+                                    <label for="aggr" class="is--sq"><span></span></label>
+                                    <label for="aggr" class="is--text">Я соглашаюсь с политикой <a href="#">обработки персональных данных</a></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
     </main>
     <footer class="footer">
-
+        <div class="footer__inner container">
+            <div class="footer__left">
+                <div class="footer__left__logo">
+                    <a href="index.html"><img src="img/logo_inverse.png" alt=""></a>
+                </div>
+                <div class="footer__left__cop">
+                    &copy; Фонд развития промышленности <br>Орловской области
+                </div>
+            </div>
+            <div class="footer__menus">
+                <div class="footer__menu">
+                    <div class="footer__menu__heading">Фонд</div>
+                    <ul>
+                        <li><a href="about.html">О фонде</a></li>
+                        <li><a href="projects.html">Проекты</a></li>
+                        <li><a href="gisp.html">ГИСП</a></li>
+                        <li><a href="partners.html">Партнеры</a></li>
+                    </ul>
+                </div>
+                <div class="footer__menu">
+                    <div class="footer__menu__heading">Информация</div>
+                    <ul>
+                        <li><a href="support.html">Господдержка</a></li>
+                        <li><a href="news.html">Новости</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer__menu">
+                    <div class="footer__menu__heading">Контакты</div>
+                    <ul>
+                        <li><span>302030, г. Орёл Наб. Дубровинского дом 70 оф. 217</span></li>
+                        <li><a href="tel:84862544629">+7 (4862) 54-46-29</a></li>
+                        <li><a href="mailto:frpoo@yandex.ru">frpoo@yandex.ru</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__dd">
+                <a class="footer__dd__block" href="https://dorohovdesign.ru/" target="_blank">
+                    <div class="footer__dd__block__text">Сделано в</div>
+                    <div class="footer__dd__block__logo">
+                        <svg class="svg-dorohov-dims svg is--dorohov">
+                            <use xlink:href="img/svg/sprites.svg#dorohov"></use>
+                        </svg>
+                    </div>
+                </a>
+            </div>
+        </div>
     </footer>
     <div id="overlay"></div>
 

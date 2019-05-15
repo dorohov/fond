@@ -4,8 +4,12 @@ body {
         .mobile__menu {
             transform: none;
         }
+        .navbar {
+            background: #fff !important;
+        }
     }
     &.is--overlay {
+        overflow: hidden;
         #overlay {
             display: block;
         }
@@ -20,6 +24,7 @@ body {
 
 a {
     text-decoration: none;
+    transition: .25s all ease;
 }
 
 ul {
@@ -36,6 +41,13 @@ img {
 img {
     max-width: 100%;
     width: 100%;
+}
+
+.__anim {
+    opacity: 0;
+    &.is--show {
+        opacity: 1;
+    }
 }
 
 #overlay {

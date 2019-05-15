@@ -1,0 +1,57 @@
+<div class="form slide">
+    <div class="form__inner container">
+        <div class="heading is--center">Задайте интересующий вас вопрос</div>
+        <form class="form__wrap">
+            <div class="form__row">
+                <div class="form__block is-w3">
+                    <div class="form__group">
+                        <input type="text" name="name" id="name" placeholder="Ваше имя">
+                        <label for="name">
+                            @@include('components.svg.html', {"name": "form_name"})
+                        </label>
+                    </div>
+                </div>
+                <div class="form__block is-w3">
+                    <div class="form__group">
+                        <input type="text" name="phone" id="phone" placeholder="Ваш телефон">
+                        <label for="phone">
+                            @@include('components.svg.html', {"name": "form_phone"})
+                        </label>
+                    </div>
+                </div>
+                <div class="form__block is-w3">
+                    <div class="form__group">
+                        <input type="email" name="email" id="email" placeholder="Ваш E-mail">
+                        <label for="email">
+                            @@include('components.svg.html', {"name": "form_email"})
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="form__row">
+                <div class="form__block is-w1">
+                    <div class="form__group">
+                        <input type="text" name="comm" id="comm" placeholder="Ваш вопрос">
+                        <label for="comm">
+                            @@include('components.svg.html', {"name": "form_comm"})
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="form__row">
+                <div class="form__submit">
+                    <div class="form__submit__btn">
+                        <input type="submit" value="Отправить вопрос" class="btn">
+                    </div>
+                    <div class="form__submit__text">
+                        <div class="form__check">
+                            <input type="checkbox" name="aggr" id="aggr" checked>
+                            <label for="aggr" class="is--sq"><span></span></label>
+                            <label for="aggr" class="is--text">Я соглашаюсь с политикой <a href="#">обработки персональных данных</a></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

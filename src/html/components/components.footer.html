@@ -1,5 +1,49 @@
 <footer class="footer">
-    
+    <div class="footer__inner container">
+        <div class="footer__left">
+            <div class="footer__left__logo">
+                <a href="@@pages.index"><img src="img/logo_inverse.png" alt=""></a>
+            </div>
+            <div class="footer__left__cop">
+                &copy; Фонд развития промышленности <br>Орловской области
+            </div>
+        </div>
+        <div class="footer__menus">
+            <div class="footer__menu">
+                <div class="footer__menu__heading">Фонд</div>
+                <ul>
+                    <li><a href="@@pages.about">О фонде</a></li>
+                    <li><a href="@@pages.projects">Проекты</a></li>
+                    <li><a href="@@pages.gisp">ГИСП</a></li>
+                    <li><a href="@@pages.partners">Партнеры</a></li>
+                </ul>
+            </div>
+            <div class="footer__menu">
+                <div class="footer__menu__heading">Информация</div>
+                <ul>
+                    <li><a href="@@pages.support">Господдержка</a></li>
+                    <li><a href="@@pages.news">Новости</a></li>
+                    <li><a href="@@pages.contacts">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="footer__menu">
+                <div class="footer__menu__heading">Контакты</div>
+                <ul>
+                    <li><span>302030, г. Орёл Наб. Дубровинского дом 70 оф. 217</span></li>
+                    <li><a href="@@phone_link">@@phone</a></li>
+                    <li><a href="mailto:@@email">@@email</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__dd">
+            <a class="footer__dd__block" href="https://dorohovdesign.ru/" target="_blank">
+                <div class="footer__dd__block__text">Сделано в</div>
+                <div class="footer__dd__block__logo">
+                    @@include('components.svg.html', {"name": "dorohov"})
+                </div>
+            </a>
+        </div>
+    </div>
 </footer>
 <div id="overlay"></div>
 @@include('../modals/modal.main.html')
