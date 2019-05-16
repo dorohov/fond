@@ -19,10 +19,115 @@
     }
 }
 
+.docs {
+    &-list {
+        padding-top: 50px;
+        overflow: hidden;
+        &__inner {
+            margin: 0 -60px;
+            overflow: hidden;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .heading {
+            font-size: 24px;
+            line-height: 36px;
+            margin-bottom: 25px;
+        }
+        &.is--border {
+            border-bottom: 1px solid rgba(#000, .2);
+            margin-bottom: 30px;
+            padding-top: 0;
+        }
+    }
+    &-block {
+        padding: 0 60px;
+        margin-bottom: 30px;
+        &__inner {
+            display: flex;
+            align-items: center;
+            &:hover {
+                .docs {
+                    &-block {
+                        &__right {
+                            color: $red;
+                        }
+                    }
+                }
+            }
+        }
+        &__left {
+            margin-right: 10px;
+            svg {
+                fill: $red;
+            }
+        }
+        &__right {
+            font-size: 18px;
+            line-height: 24px;
+            color: #000;
+            transition: .25s all ease;
+        }
+    }
+}
+
+.pagination {
+    &__inner {
+        ul {
+            display: flex;
+            li {
+                display: flex;
+                align-items: flex-end;
+                a,
+                span {
+                    display: block;
+                    padding: 5px;
+                    color: #000;
+                    font-size: 18px;
+                }
+                span {
+                    color: $red;
+                }
+                &::after {
+                    content: '...';
+                    font-size: 18px;
+                    padding: 5px 0 5px 0;
+                }
+                &:last-child {
+                    &::after {
+                        content: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media (max-width: $resp768) {
     .btn {
         font-size: 14px;
         padding: 15px 30px;
         letter-spacing: .20em;
+    }
+    .docs {
+        &-list {
+            padding-top: 30px;
+            &__inner {
+                margin: 0 -30px;
+            }
+        }
+        &-block {
+            padding: 0 30px;
+            margin-bottom: 20px;
+            &__left {
+                svg {
+                    width: 33px;
+                    height: 33px;
+                }
+            }
+            &__right {
+                font-size: 16px;
+            }
+        }
     }
 }

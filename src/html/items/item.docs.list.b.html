@@ -1,0 +1,9 @@
+<div class="docs-list is--border">
+    <div class="docs-list__inner">
+        @@for(var i = 0; i < items.length; i++) {
+            @@include('item.docs.block.html', {
+                "name": "`+items[i].name+`"
+            })
+        }
+    </div>
+</div>

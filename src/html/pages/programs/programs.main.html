@@ -1,0 +1,61 @@
+<div class="programs slide is--sm">
+    <div class="container">
+        @@include('../../items/item.breadcrumbs.html', {
+            "list": [
+                {
+                    "title": "Главная",
+                    "url": "@@pages.index"
+                }
+            ],
+            "current": "Программы"
+        })
+        <h1 class="heading">Программы</h1>
+        <div class="programs__list">
+            @@include('programs.block.html', {
+                "icon": "program1",
+                "title": "Проекты развития",
+                "url": "http://frprf.ru/zaymy/proekty-razvitiya/"
+            })
+            @@include('programs.block.html', {
+                "icon": "program2",
+                "title": "Лизинг",
+                "url": "http://frprf.ru/lizing/"
+            })
+            @@include('programs.block.html', {
+                "icon": "program3",
+                "title": "Станкостроение",
+                "url": "http://frprf.ru/zaymy/stankostroenie/"
+            })
+            @@include('programs.block.html', {
+                "icon": "program4",
+                "title": "Конверсия",
+                "url": "http://frprf.ru/zaymy/konversiya/"
+            })
+            @@include('programs.block.html', {
+                "icon": "program5",
+                "title": "Комплектующие изделия",
+                "url": "http://frprf.ru/zaymy/komplektuyushchie-izdeliya/"
+            })
+            @@include('programs.block.html', {
+                "icon": "program6",
+                "title": "Маркировка лекарств",
+                "url": "http://frprf.ru/zaymy/markirovka-lekarstv/"
+            })
+            @@include('programs.block.html', {
+                "icon": "program7",
+                "title": "Цифровизация промышленности",
+                "url": "http://frprf.ru/zaymy/tsifrovizatsiya-promyshlennosti/"
+            })
+            @@include('programs.block.html', {
+                "icon": "program8",
+                "title": "Производительность труда",
+                "url": "http://frprf.ru/zaymy/proizvoditelnost-truda/"
+            })
+            @@include('programs.block.html', {
+                "icon": "program2",
+                "title": "Лизинг",
+                "url": "@@pages.program"
+            })
+        </div>
+    </div>
+</div>
