@@ -10,7 +10,7 @@
     letter-spacing: .28em;
     color: #fff;
     padding: 25px 60px;
-    background: $red;
+    background: #DC0032;
     transition: .4s all ease;
     cursor: pointer;
     &:hover {
@@ -20,7 +20,7 @@
     &.is--inverse {
         background: #000;
         &:hover {
-            background: $red;
+            background: #DC0032;
         }
     }
 }
