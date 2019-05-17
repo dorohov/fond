@@ -1,0 +1,34 @@
+<div class="contacts">
+    <div class="contacts__inner">
+        <div class="contacts__aside">
+            <div class="contacts__aside__inner">
+                @@include('../../items/item.breadcrumbs.html', {
+                    "list": [
+                        {
+                            "title": "Главная",
+                            "url": "@@pages.index"
+                        }
+                    ],
+                    "current": "Контакты"
+                })
+                <h1 class="heading">Контакты</h1>
+                @@include('../../items/item.contacts.html')
+                <div class="contacts__aside__person">
+                    <div class="contacts__aside__person__name">Копин Олег Ласлович</div>
+                    <div class="contacts__aside__person__desc">
+                        <p>Директор НО «Фонд развития <br> промышленности Орловской области»</p>
+                        <p>Кандидат технических наук</p>
+                    </div>
+                    <div class="contacts__aside__person__mail">
+                        <ul class="contacts__list">
+                            <li class="is--email"><a href="@@email">@@email</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contacts__map">
+            <div id="map"></div>
+        </div>
+    </div>
+</div>

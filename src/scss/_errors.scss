@@ -1,0 +1,53 @@
+.error {
+    &__block {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    &__num {
+        font-weight: 500;
+        font-family: 'Oswald';
+        font-size: 264px;
+        text-transform: uppercase;
+        color: $red;
+        width: 100%;
+        text-align: center;
+    }
+    &__title {
+        width: 100%;
+        text-align: center;
+        font-family: 'Oswald';
+        font-weight: 500;
+        font-size: 36px;
+        padding: 30px 0 30px 0;
+    }
+    &__desc {
+        text-align: center;
+        font-size: 16px;
+        line-height: 21px;
+        margin-bottom: 65px;
+    }
+    &__btn {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: $resp768) {
+    .error {
+        &__num {
+            font-size: 100px;
+        }
+        &__title {
+            font-size: 26px;
+            padding: 15px 0;
+        }
+        &__desc {
+            margin-bottom: 24px;
+            br {
+                display: none;
+            }
+        }
+    }
+}

@@ -497,6 +497,41 @@
     }
 }
 
+.contacts {
+    height: 100%;
+    &__inner {
+        display: flex;
+    }
+    &__aside {
+        min-width: 580px;
+        &__inner {
+            padding: 55px 0 130px 0;
+        }
+        &__person {
+            padding-top: 100px;
+            &__name {
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 36px;
+                font-family: 'Oswald';
+            }
+            &__desc {
+                p {
+                    font-size: 16px;
+                    line-height: 21px;
+                }
+            }
+        }
+    }
+    &__map {
+        width: 100%;
+        #map {
+            width: 100%;
+            min-height: 100%;
+        }
+    }
+}
+
 @media (max-width: 1500px) {
     .projects {
         &__block {
@@ -564,6 +599,11 @@
                 font-size: 20px;
                 line-height: 22px;
             }
+        }
+    }
+    .contacts {
+        &__aside {
+            min-width: 400px;
         }
     }
 }
@@ -835,6 +875,37 @@
             }
             &__date {
                 font-size: 14px;
+            }
+        }
+    }
+    .contacts {
+        &__inner {
+            flex-wrap: wrap;
+            flex-flow: wrap;
+            min-height: 0 !important;
+        }
+        &__map {
+            order: 0;
+            width: 100%;
+            #map {
+                height: 300px;
+            }
+        }
+        &__aside {
+            order: 1;
+            width: 100%;
+            min-width: 0;
+            &__inner {
+                padding-bottom: 50px;
+            }
+            &__person {
+                padding-top: 30px;
+            }
+            p,
+            li,
+            p span {
+                font-size: 14px !important;
+                line-height: 21px !important;
             }
         }
     }

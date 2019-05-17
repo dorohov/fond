@@ -59,6 +59,12 @@
                     background: #000;
                 }
             }
+            &.parsley-error {
+                background: rgba($red, .1);
+                &::placeholder {
+                    color: $red;
+                }
+            }
         }
     }
     &__submit {
@@ -123,6 +129,20 @@
             }
         }
     }
+}
+
+// .parsley-errors-list.filled {
+//     position: absolute;
+//     background: $red;
+//     color: #fff;
+//     font-weight: bold;
+//     font-size: 14px;
+//     padding: 5px 10px;
+//     top: 100%;
+// }
+
+.parsley-errors-list.filled {
+    display: none;
 }
 
 @media (max-width: $resp1025) {
