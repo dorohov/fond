@@ -429,6 +429,12 @@
         &__inner {
             border: 1px solid $red;
             height: 110px;
+            display: block;
+            &:hover {
+                img {
+                    transform: scale(1.03);
+                }
+            }
         }
         &__content {
             height: 100%;
@@ -442,6 +448,7 @@
                 max-height:100%;
                 height: auto;
                 width: auto;
+                transition: .25s all ease;
             }
         }
     }

@@ -3,7 +3,7 @@
     $(function() {
 
         $('form').parsley()
-        $('#modal_form').modal()
+        // $('#modal_form').modal()
         $('.anchor').on('click', function(e) {
             e.preventDefault()
             var aid = $(this).attr("href");
