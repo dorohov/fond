@@ -24,5 +24,13 @@
             setMainHeight()
         })
 
+        $('.news__carousel__list').slick({
+            adaptiveHeight: true,
+            prevArrow: '.news__carousel__controls button.is--prev',
+            nextArrow: '.news__carousel__controls button.is--next',
+            fade: true,
+            cssEase: 'linear'
+        })
+
     })
 })(jQuery);

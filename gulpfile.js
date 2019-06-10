@@ -149,6 +149,7 @@ function createBundleJs() {
                 './dist/js/svg4everybody.min.js',
                 './dist/js/parsley.min.js',
                 './dist/js/i18n/ru.js',
+                './dist/js/slick.min.js',
                 './dist/js/main.js'
             ])
             .pipe(sourcemaps.init())
