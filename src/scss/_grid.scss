@@ -131,6 +131,47 @@ h6 {
             display: none;
         }
     }
+    &-docs {
+        padding-top: 70px;
+        &__heading {
+            font-weight: 500;
+            font-family: 'Oswald';
+            font-size: 24px;
+            line-height: 36px;
+            margin-bottom: 40px;
+        }
+        &__inner {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -60px;
+            overflow: hidden;
+            .docs-block {
+                max-width: 33.333333%;
+                width: 100%;
+            }
+        }
+        @media (max-width: 1300px) {
+            .page-docs__inner {
+                margin: 0 -30px;
+                .docs-block {
+                    max-width: 50%;
+                    padding-left: 30px;
+                    padding-right: 30px;
+                }
+            }
+        }
+        @media (max-width: 550px) {
+            padding-top: 30px;
+            .page-docs__heading {
+                margin-bottom: 20px;
+            }
+            .page-docs__inner {
+                .docs-block {
+                    max-width: 100%;
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: $resp768) {
